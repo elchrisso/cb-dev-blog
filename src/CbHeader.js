@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 
+import { NavLink } from 'react-router-dom'
+
 class CbHeader extends Component {
   render () {
     return (
       <div>
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">
-                <p className="nav-text">chris's adventures in codeland</p>
-              </a>
+        <nav className="navbar navbar-default">
+          <div className="container-fluid">
+            <div className="navbar-header">
+              <p className="nav-text">chris's adventures in codeland</p>
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/fullblogentry">fullblog</NavLink>
             </div>
           </div>
         </nav>
