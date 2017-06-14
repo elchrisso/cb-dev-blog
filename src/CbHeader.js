@@ -11,7 +11,7 @@ class CbHeader extends Component {
             <div className="navbar-header">
               <p className="nav-text">chris's adventures in codeland</p>
               <NavLink to="/">Home</NavLink>
-              <NavLink to="/fullblogentry">fullblog</NavLink>
+
             </div>
           </div>
         </nav>
