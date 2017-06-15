@@ -7,11 +7,11 @@ class BlogEntryPreview extends Component {
   render() {
     return (
       <div>
-        {this.props.blogEntryList.map((blogEntry) => {
+        {this.props.blogEntryList.map((blogEntry, idx) => {
           return (
-            <div className="jumbotron">
-              <h1>{blogEntry[0]}</h1>
-              <p>{blogEntry[1]}</p>
+            <div className="jumbotron" key={idx}>
+              <h1>{blogEntry.date}</h1>
+              <p>{blogEntry.post}</p>
               <NavLink to="/fullblogentry">fullblog</NavLink>
             </div>
           )

@@ -5,10 +5,10 @@ class CbSideBar extends Component {
   render () {
     return (
       <div>
-        {this.props.CbSideBarPanels.map((sideBarPanel) => {
+        {this.props.CbSideBarPanels.map((sideBarPanel, idx) => {
           return (
-            <div className="jumbotron">{sideBarPanel[0]}</div>
-          )
+                <div className="jumbotron" key={idx}>{sideBarPanel.title}</div>
+              )
         })}
       </div>
     )
