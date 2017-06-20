@@ -44,6 +44,15 @@ class App extends Component {
         {
           date: "6-15-17",
           post: "6:30a.m., the morning after wednesday class and, incidentally, the day after my birthday as well!  I'm not quite 4 weeks deep on the bootcamp experience and am feeling an interesting combination of thoughts.  One is that this is without a doubt the most fluently I have used a large number of technical pieces to build something with code ,while another is that I am getting hopelessly lost in a sea of information and wondering whether I could find my way bck to a functional application on my own.  A real adventure!  We are essentially finished with React, for the purpose of this course at least, and will be moving on to Ajax on Saturday.  Also, a friend messaged me yesterday and said that she had actually gone through the boot camp process rather than university.  I really am enjoying this stuff, and have a real thought that I may want to transition to more of a coding role in the future.  It could be as simple as employing what I'm learning at camp, in my current, much more technical QA role.  But the temptation to build cool things and make more money looks like it will be a real thing."
+        },
+        {
+          date: "6-17-17",
+          post: "8a.m. Sunday morning.  My brain freaked out in class yesterday morning, presumably because of the combination of overwhelm from the week and our ajax discussion, just tunnel visioned and a seeming total rejection of any help offered, I felt pretty cognitively helpless.  I was going to go home and keep working on comprehension of the pattern but Aric flatly said no more today.  So, I instead hung out with Trane, who is doing well, switched the wheels out on my board and ollied around in the driveway for a while, and went to Tom Adamson's for bbq and beers until about midnight.  I got up this morning feeling like I'd definitely had beers and bbq the night before, After just a few minutes of coffee juped back into the ajax project, and total clarity!  Really happy about this.  I think I'm pushing through the information about as fast as I can, and I think I will come to a place where I can fully support a basic web app on my own.  Technical learning is such a weirdly emotional process for me."
+        },
+        {
+          date: "6-20-17",
+          time: "0749 hours",
+          post: "A beautiful Tuesday morning!  The sun streaming in through my open front door and the big windows on my left, while I lean back on my couch , heating pad on my funky shoulder, mexican world techno on the pa and I'm attempting to get up the proper mindset to jump into reduxing this site.  I've sliced the blog post strings, now to create a piece of state that handles whether that slice is in effect, and attach it to a button.  We did redux last night in class and it was kinda mindbending, but I managed to stay pretty sane, push doubts to the back of my head and let them run while I focused on the lesson on the board.  Anyways here I go, though it's nearly time for werk.  Maybe a followup to this later in the day..."
         }
       ]
     }

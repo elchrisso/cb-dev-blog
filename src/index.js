@@ -5,6 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import { BrowserRouter } from 'react-router-dom'
+import { createStore } from 'redux'
 
 
 ReactDOM.render(
@@ -13,3 +14,4 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById('root'));
 registerServiceWorker();
+//const store = createStore(reducer)

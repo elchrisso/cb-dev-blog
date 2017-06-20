@@ -11,7 +11,7 @@ class BlogEntryPreview extends Component {
           return (
             <div className="jumbotron" key={idx}>
               <h1>{blogEntry.date}</h1>
-              <p>{blogEntry.post}</p>
+              <p>{blogEntry.post.slice(0,97) + "..."}</p>
               <NavLink to="/fullblogentry">fullblog</NavLink>
             </div>
           )
