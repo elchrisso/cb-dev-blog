@@ -7,6 +7,7 @@ import FullBlogEntry from './Home/FullBlogEntry.js'
 import CreateBlogPost from './Home/CreateBlogPost.js'
 import CbFooter from './CbFooter'
 
+import { connect } from 'react-redux'
 import { Route, Link } from 'react-router-dom'
 
 class App extends Component {
@@ -78,4 +79,10 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    blogPost: state.blogPost.data
+  }
+}
+
+export default connect(mapStateToProps)(App);
