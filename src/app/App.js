@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import BlogEntryPreview from './BlogEntryPreview.js'
-import CbHeader from './CbHeader.js'
-import CbSideBar from './CbSideBar.js'
-import FullBlogEntry from './Home/FullBlogEntry.js'
-import CreateBlogPost from './Home/CreateBlogPost.js'
-import CbFooter from './CbFooter'
+import BlogEntryPreview from '../posts/BlogEntryPreview.js'
+import CbHeader from '../header/CbHeader.js'
+import CbSideBar from '../CbSideBar.js'
+import FullBlogEntry from '../Home/FullBlogEntry.js'
+import CreateBlogPost from '../Home/CreateBlogPost.js'
+import CbFooter from '../CbFooter'
+import BlogPostList from '../posts/BlogPostList'
 
 import { connect } from 'react-redux'
-import { Route, Link } from 'react-router-dom'
+import { Route, Link, Switch } from 'react-router-dom'
 
 class App extends Component {
   constructor () {
@@ -75,9 +76,12 @@ class App extends Component {
         <CbHeader/>
         <div className="row">
           <div className="col-9">
+            <BlogPostList/>
             <BlogEntryPreview blogEntryList={this.state.blogEntries}/>
-            <Route path="/fullblogentry" component={FullBlogEntry} />
-            <Route exact path="/createblogpost" component={CreateBlogPost} />
+            <Switch>
+              <Route path="/fullblogentry" component={FullBlogEntry} />
+              <Route exact path="/addblogpost" component={CreateBlogPost} />
+            </Switch>
           </div>
           <div className="col-3">
             <CbSideBar CbSideBarPanels={this.state.sidebarPanels}/>
