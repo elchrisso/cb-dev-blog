@@ -7,13 +7,16 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './store'
+import { ApolloProvider } from 'react-apollo'
+import client from './client'
 
 
 ReactDOM.render(
-  <Provider store={store}>
+  <ApolloProvider client={client} store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </Provider>,
-  document.getElementById('root'));
+  </ApolloProvider>,
+  document.getElementById('root')
+);
 registerServiceWorker();
